@@ -1,3 +1,5 @@
+import search from '/public/img/search.png'
+
 const SearchOnly = () => {
     return (
         <form id="form-search" className="form-search">
@@ -5,7 +7,7 @@ const SearchOnly = () => {
                 <img
                     id="image-search"
                     className="image-search"
-                    src='../../../../public/img/search.png'
+                    src={ search }
                 />
             </label>
 

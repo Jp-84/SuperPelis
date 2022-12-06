@@ -1,3 +1,5 @@
+import logo from '/public/img/cine.jpg'
+
 const LogoOnly = ({ setHome, setCategories, setPremiers, setSeries, setLogin, setSignup, setUploadArticles }) => {
     const handleHome = (e) => {
         e.preventDefault();
@@ -19,7 +21,7 @@ const LogoOnly = ({ setHome, setCategories, setPremiers, setSeries, setLogin, se
                 <img
                     id='image-logo'
                     className='image-logo'
-                    src='/public/img/cine.jpg'
+                    src= { logo }
                     alt='logo' />
                 <p className='title-logo'>
                     <span>S</span>uperPelis
