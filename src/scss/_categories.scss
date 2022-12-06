@@ -1,0 +1,34 @@
+@use './ScssComponentes/variables' as v;
+
+.main-categories {
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+
+    .categories {
+        padding: 2rem;
+        margin: 2rem 3rem;
+        border-style: none;
+        border-radius: 2rem;
+        text-align: center;
+        background-color: v.$color-5;
+        box-shadow: 0 3px 13px 1px v.$color-5;
+        cursor: pointer;
+        &:hover{
+            background-color: v.$color-8;
+        }
+
+        .img {
+            width: 15rem;
+            max-height: 20rem;
+            border-radius: 1rem;
+            box-shadow: 0 3px 13px 1px v.$color-3;
+
+        }
+
+        .text {
+            margin: 3rem 0 0 0;
+            font-size: 2rem;
+            color: v.$color-7;
+        }
+    }
+}

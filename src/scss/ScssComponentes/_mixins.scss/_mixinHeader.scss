@@ -1,0 +1,111 @@
+@use '../variables' as v;
+
+// Barra superior del Header
+@mixin top-bar-container {
+    height: 15rem;
+    background-color: v.$color-6;
+    box-shadow: 0 3px 13px 1px rgb(0 0 0 / 80%);
+    display: grid;
+    grid-template-columns: 50% 30% 20%;
+}
+
+// Logo de la Pagina (incluye la imagen y el nombre)
+@mixin logo {
+    a{
+        display: flex;
+        align-items:center;
+        .image-logo{
+            height: 15rem;
+            width: auto;
+            padding-left: 5rem;
+            margin: 0;
+            cursor: pointer;
+            
+        }
+        .title-logo{
+            margin: 0;
+            font-size: 6rem;
+            font-weight: 600;
+            color: v.$color-5;
+            text-shadow: 5px 5px 10px v.$color-3;
+            cursor: pointer;
+            span{
+                font-weight: 900;
+                color: v.$color-2;
+            }
+            
+        }
+    }
+}
+
+// Buscador del Header
+@mixin search {
+    .form-search{
+        color: v.$color-5;
+        display: flex;
+        margin-top:3rem ;
+        align-items: flex-start;
+        justify-content: flex-end;
+        .input-search{
+            font-size: 2rem;
+            background-color: v.$color-4;
+            width: 30rem;
+            height: 3rem;
+            border-style: none;
+            border-radius: 2rem;
+            text-align: start;
+            padding-left: 2rem;
+            &:hover{
+                box-shadow: 0 3px 13px 1px v.$color-3;
+            }
+        }
+        .image-search{
+            color: v.$color-2;
+            width: 3rem;
+            cursor: pointer;
+        }
+    }
+}
+
+//Contenedor de los botones de Log in / Sign up
+@mixin container-login {
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    margin-top: 2rem;
+}
+
+// Boton de Login de la Barra de Header
+@mixin b-login {
+    .button-login{
+        margin-right: 1rem;
+        color: v.$color-2;
+        padding: 1.5rem;
+        font-size: 1.5rem;
+        background-color: v.$color-5;
+        border-radius: 1.5rem;
+        border-style: none;
+        font-weight: 600;
+        cursor: pointer;
+        &:hover{
+            box-shadow: 0 3px 13px 1px v.$color-3;
+        }
+    }
+}
+
+// Boton de signup de la Barra de Header
+@mixin b-signup {
+    .button-signup{
+        color: v.$color-4;
+        padding: 1.5rem;
+        font-size: 1.5rem;
+        background-color: v.$color-1;
+        border-radius: 1.5rem;
+        border-style: none;
+        font-weight: 600;
+        cursor: pointer;
+        &:hover{
+            box-shadow: 0 3px 13px 1px v.$color-3;
+        }
+    }
+}

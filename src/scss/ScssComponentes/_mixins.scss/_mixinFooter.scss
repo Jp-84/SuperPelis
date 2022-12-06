@@ -1,0 +1,22 @@
+@use '../variables' as v;
+
+
+@mixin List {
+    .list-footer {
+        padding: 0;
+        margin: 1rem 0 0 1rem;
+        color: v.$color-7;
+        font-size: 1.5rem;
+        display: grid;
+        list-style: none;
+        align-items: center;
+
+        li {
+            &:hover {
+                color: v.$color-1;
+                cursor: pointer;
+
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+@use './ScssComponentes/variables' as v;
+
+
+.main-home {
+    margin: 1rem;
+}
+
+.container-banner {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .arrow {
+        width: 5rem;
+        height: 5rem;
+        cursor: pointer;
+    }
+
+    .img-banner {
+        width: 80%;
+        cursor: pointer;
+    }
+}
+.article {
+    margin: 4rem 10rem;
+    
+
+    .description {
+        padding: 1rem;
+        margin-top: 2rem;
+        border-radius: 2rem;
+        box-shadow: 0 3px 13px 1px v.$color-3;
+
+        h3 {
+            margin: 0 0 2rem 0;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .subtitle {
+            font-size: 1.8rem;
+            font-weight: 800;
+
+            span {
+                font-weight: 400;
+                font-size: 1.3rem;
+                text-align: justify;
+            }
+        }
+    }
+}

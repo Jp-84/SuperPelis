@@ -1,0 +1,23 @@
+@use "body";
+@use './ScssComponentes/headers';
+@use 'from';
+@use 'home';
+@use 'categories';
+@use './ScssComponentes/footer';
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-snap-type: mandatory;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+.navegacion,
+.contenido,
+.map{
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
