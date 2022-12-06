@@ -5,7 +5,7 @@ const SearchOnly = () => {
                 <img
                     id="image-search"
                     className="image-search"
-                    src='/src/assets/img/search.png'
+                    src='../../../../public/img/search.png'
                 />
             </label>
 

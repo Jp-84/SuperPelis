@@ -19,7 +19,7 @@ const LogoOnly = ({ setHome, setCategories, setPremiers, setSeries, setLogin, se
                 <img
                     id='image-logo'
                     className='image-logo'
-                    src='/src/assets/img/cine.jpg'
+                    src='/public/img/cine.jpg'
                     alt='logo' />
                 <p className='title-logo'>
                     <span>S</span>uperPelis

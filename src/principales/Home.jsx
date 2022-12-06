@@ -13,18 +13,18 @@ const Home = () => {
                     <img
                         id="arrow-left"
                         className="arrow"
-                        src='/src/assets/img/arrowleft.png'
+                        src='../../public/img/arrowleft.png'
                         alt="arrow-left"
                     />
                     <img
                         id="img-banner"
                         className="img-banner"
-                        src='/src/assets/img/banners/banners.jpg'
+                        src='../../public/img/banners/banners.jpg'
                     />
                     <img
                         id="arrow-right"
                         className="arrow"
-                        src='/src/assets/img/arrowright.png'
+                        src='../../public/img/arrowright.png'
                         alt="arrow-right"
                     />
                 </div>
