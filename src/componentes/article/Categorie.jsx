@@ -1,11 +1,12 @@
 import React from 'react';
 
-const Categorie = ( {src, name}  ) => {
-    
+
+const Categorie = ( {src, name} ) => {
+
     return (
         <article className="categories">
             <img
-                src={`/src/assets/img/categories/${ src }.jpg`}
+                src={(`/public/img/categories/${ src }.jpg`)}
                 className="img"
                 alt={name}
             />
