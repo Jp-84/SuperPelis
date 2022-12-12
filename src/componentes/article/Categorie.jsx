@@ -6,7 +6,7 @@ const Categorie = ( {src, name} ) => {
     return (
         <article className="categories">
             <img
-                src={(`/public/img/categories/${ src }.jpg`)}
+                src={ src }
                 className="img"
                 alt={name}
             />
